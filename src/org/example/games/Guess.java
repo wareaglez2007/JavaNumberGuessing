@@ -38,7 +38,7 @@ public class Guess {
 				+ "We are going to play a number guessing game.\n"
 				+ "Please guess a number between 1 and 1000.\n");
 		int answer = rand.nextInt(1000) + 1;
-		System.out.println(answer + "\n");
+		//System.out.println(answer + "\n"); //Testing purposes
 		// the game loop
 		// TODO write a while loop to play the game
 		boolean winner = false;
@@ -51,11 +51,10 @@ public class Guess {
 			// Warn user that number must be between 1 and 1000
 			if ((guess < 0) || (guess > 1000)) {
 
-				System.out
-						.println("Try#"
-								+ userTries
-								+ ") Warning! Your guess MUST be between 1 and 1000. \nYou have entered: "
-								+ guess + "\n try again:\n");
+				System.out.println("Try#"
+						+ userTries
+						+ ") Warning! Your guess MUST be between 1 and 1000. \nYou have entered: "
+						+ guess + "\n try again:\n");
 				//
 				// TODO check if the user's guess is
 				// too low, too high or correct
@@ -85,8 +84,8 @@ public class Guess {
 		} else {
 			// TODO if the user DID NOT win the game
 			System.out
-					.println("Sorry you have reached the guessing limit of 10.\n"
-							+ "The Correct Answer was " + answer);
+			.println("Sorry you have reached the guessing limit of 10.\n"
+					+ "The Correct Answer was " + answer);
 		}
 		// output the answer
 
